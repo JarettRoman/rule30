@@ -1,6 +1,6 @@
 class Automaton
-  def initialize
-    @key = "00011110".reverse
+  def initialize(rule)
+    @key = rule.reverse
   end
 
   def offspring(array)
@@ -40,5 +40,5 @@ end
 
 
 
-play = Automaton.new
+play = Automaton.new('00011110')
 play.evolve
